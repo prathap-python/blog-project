@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+{%load staticfiles%}
+{%load blog_tags%}
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>{%block title_block%}{%endblock%}</title>
+      <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+      <link rel="stylesheet" href="{%static "css/blog.css"%}">
+
+  </head>
+<body>
+<div class="content">
+    {%block content%}{%endblock%}
+</div>
+<div class="sidebar">
+    <h1>PRATHAP's BLOG</h1>
+    <h3>total posts published till today</h3>
+    {%total_posts%}
+    <h3>latest posts are</h3>
+    {%latest_posts%}
+
+</div>
+
+</body>
+</html>
+

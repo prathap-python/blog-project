@@ -1,0 +1,28 @@
+.content{
+background:red;
+float:left;
+padding:0 0 0 30px;
+width:60%
+}
+.sidebar{
+background:green;
+float:right;
+padding:10px;
+width:40%;
+height:100%;
+}
+h1{
+text-align:center;
+border-bottom:1px solid yellow;
+padding-bottom:10px;
+}
+body{
+background:red;
+text:white;
+}
+#ch{
+color:yellow;
+font-size:30px;
+font-style:italic;
+border-bottom:2px solid yellow
+}
